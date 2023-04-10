@@ -15,12 +15,12 @@
 # Output: 1
     
     
-# def singleNumber(nums):
+def singleNumber(nums):
     
-#     result = 0
-#     for num in nums:
-#         result ^= num # ^ is a binary operator that compares two bits and 
-#                       # returns 1 if they are different, and 0 if they are the same.
-#     return result
+    result = 0
+    for num in nums:
+        result ^= num # ^ is a binary operator that compares two bits and 
+                      # returns 1 if they are different, and 0 if they are the same.
+    return result
     
-# print(singleNumber([4,1,2,1,2]))   
+print(singleNumber([4,1,2,1,2]))   

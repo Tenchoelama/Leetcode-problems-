@@ -14,18 +14,18 @@
 # Input: strs = ["flower","flow","flight"]
 # Output: "fl"
 
-# def commonPrefix(strs):
+def commonPrefix(strs):
     
-#     res = ''
+    res = ''
     
-#     for i in range(len(strs[0])):
-#         for s in strs:
-#             if i == len(s) or s[i] != strs[0][i]:
-#                 return res
+    for i in range(len(strs[0])):
+        for s in strs:
+            if i == len(s) or s[i] != strs[0][i]:
+                return res
         
-#         res += strs[0][i]
+        res += strs[0][i]
         
-#     return res
+    return res
     
 
-# print(commonPrefix(["flower","flow","flight"]))
+print(commonPrefix(["flower","flow","flight"]))

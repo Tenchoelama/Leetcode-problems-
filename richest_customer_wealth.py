@@ -19,14 +19,14 @@
 # Both customers are considered the richest with a wealth of 6 each, so return 6.
 
 
-# def richestWealth(accounts):
+def richestWealth(accounts):
     
-#     d = {}
+    d = {}
     
-#     for i, elem in enumerate(accounts):
-#         d[i] = sum(elem)
+    for i, elem in enumerate(accounts):
+        d[i] = sum(elem)
         
-#     return max(d.values())
+    return max(d.values())
     
     
-# print(richestWealth([[1,5],[7,3],[3,5]]))
+print(richestWealth([[1,5],[7,3],[3,5]]))

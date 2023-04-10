@@ -16,23 +16,23 @@
 # Explanation: You need to sort [6, 4, 8, 10, 9] in ascending order to make the whole array sorted in ascending order.
 
 
-# def shortestSubarray(nums):
+def shortestSubarray(nums):
     
     
-#     nums1 = sorted(nums)
+    nums1 = sorted(nums)
     
-#     i = 0
-#     while i < len(nums) and nums[i] == nums1[i]:
-#         i += 1
+    i = 0
+    while i < len(nums) and nums[i] == nums1[i]:
+        i += 1
         
-#     j = len(nums)-1 
-#     while j >= 0 and nums[j] == nums1[j]:
-#         j -= 1
+    j = len(nums)-1 
+    while j >= 0 and nums[j] == nums1[j]:
+        j -= 1
         
-#     return j -i + 1
+    return j -i + 1
         
         
     
     
-# print(shortestSubarray([2,6,4,8,10,9,15]))
-                       #2,4,6,8,9,10,15     
+print(shortestSubarray([2,6,4,8,10,9,15]))
+                            

@@ -22,22 +22,22 @@
 # [6,2,2,2]
 
 
-# def largestMatrix(grid):
+def largestMatrix(grid):
     
-#     col = row = len(grid)-2
-#     temp_l = []
-#     l = []
-#     for i in range(row):
-#         for j in range(col):
-#             t = 0
-#             for k in range(i,i+3):
-#                 temp = max(grid[k][j:j+3])
-#                 t = max(t,temp)
-#             temp_l.append(t)
-#         l.append(temp_l)
-#         temp_l = []
-#     return l
+    col = row = len(grid)-2
+    temp_l = []
+    l = []
+    for i in range(row):
+        for j in range(col):
+            t = 0
+            for k in range(i,i+3):
+                temp = max(grid[k][j:j+3])
+                t = max(t,temp)
+            temp_l.append(t)
+        l.append(temp_l)
+        temp_l = []
+    return l
             
     
     
-# print(largestMatrix([[9,9,8,1],[5,6,2,6],[8,2,6,4],[6,2,2,2]]))
+print(largestMatrix([[9,9,8,1],[5,6,2,6],[8,2,6,4],[6,2,2,2]]))

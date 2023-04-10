@@ -14,23 +14,23 @@
 # Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest
 
 
-# def removeKDigits(num, k):
+def removeKDigits(num, k):
     
-#    stack = []
+   stack = []
    
-#    for digit in num:
+   for digit in num:
        
-#        if stack and k and digit < stack[-1]:
-#            stack.pop()
-#            k -= 1
+       if stack and k and digit < stack[-1]:
+           stack.pop()
+           k -= 1
            
-#        stack.append(digit)
+       stack.append(digit)
        
-#    if k:
-#         answerstack = answerstack[:-k]
+   if k:
+        answerstack = answerstack[:-k]
         
-#    return ''. join(stack)
+   return ''. join(stack)
         
         
 
-# print(removeKDigits("10200", 1))
+print(removeKDigits("10200", 1))

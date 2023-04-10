@@ -17,13 +17,13 @@
 # 3. 2 steps + 1 step
 
 
-# def climb(n):
+def climb(n):
     
     
-#     a, b = 0, 1
+    a, b = 0, 1
     
-#     for i in range(n):
-#         a, b = b, a + b
-#     return b
+    for i in range(n):
+        a, b = b, a + b
+    return b
 
-# print(climb(3))
+print(climb(3))

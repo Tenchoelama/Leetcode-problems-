@@ -14,20 +14,20 @@
 # Input: nums = [3,2,3]
 # Output: 3
         
-# def majorityElement(nums):
+def majorityElement(nums):
     
-#     d = {}
+    d = {}
     
-#     for num in nums:
-#         if num not in d:
-#             d[num] = 1
-#         else:
-#             d[num] += 1
+    for num in nums:
+        if num not in d:
+            d[num] = 1
+        else:
+            d[num] += 1
             
-#     max_value = max(d.values())
+    max_value = max(d.values())
     
-#     for key in d:
-#         if d[key] == max_value:
-#             return key
+    for key in d:
+        if d[key] == max_value:
+            return key
 
-# print(majorityElement([3,2,3]))
+print(majorityElement([3,2,3]))

@@ -14,19 +14,19 @@
 # Input: nums = [0,1,0,3,12]
 # Output: [1,3,12,0,0]
 
-# def moveZeroes(nums):
+def moveZeroes(nums):
     
-#     j = 0
+    j = 0
     
-#     for i in range(len(nums)):
+    for i in range(len(nums)):
         
-#         if nums[i] != 0:
+        if nums[i] != 0:
             
-#             nums[i], nums[j] = nums[j], nums[i]
+            nums[i], nums[j] = nums[j], nums[i]
             
-#             j += 1
+            j += 1
 
-#     return nums
+    return nums
 
-# print(moveZeroes([0,1,0,3,12]))   
+print(moveZeroes([0,1,0,3,12]))   
             
